@@ -10,16 +10,34 @@ public abstract class Employe {
 	protected SalaireTauxHeures paieH = null;
 	protected SalairePourcentage paieP = null;
 	
+	/**
+	 * Nombre d'heures travaillées
+	 */
 	protected float nbHTrav;
+	
+	/**
+	 * Chiffre d'affaires fait (cadre ou collaborateur)
+	 */
 	protected float CAffaires;
+	
+	/**
+	 * Nombre d'heures supplémentaires faites
+	 */
 	protected float tauxHSup;
+	
+	/**
+	 * Coût d'une heure de travail
+	 */
 	protected float coutH;
 	
-	
-	public Employe() {
-		
-	}
-	
+	/**
+	 * Constructeur d'objet Employe
+	 * @param nom
+	 * @param numero
+	 * @param age
+	 * @param paieH
+	 * @param paieP
+	 */
 	public Employe(String nom, String numero, int age, SalaireTauxHeures paieH, SalairePourcentage paieP) { 
 		this.nom = nom;
 		numTel = numero;
@@ -28,18 +46,44 @@ public abstract class Employe {
 		this.paieP = paieP;
 	}
 	
-	public void setInfosSalaire(float nbHeuresT, float CAffaires, float HSup) {
+	/**
+	 * Constructeur d'objet Employe 
+	 * @param nom
+	 * @param numero
+	 * @param age
+	 * @param nbHeuresT
+	 * @param CAffaires
+	 * @param HSup
+	 * @param paieH
+	 * @param paieP
+	 */
+	public Employe(String nom, String numero, int age,float nbHeuresT, float CAffaires, float HSup, float prixH, SalaireTauxHeures paieH, SalairePourcentage paieP) {
+		this.nom = nom;
+		numTel = numero;
+		this.age = age;
 		nbHTrav = nbHeuresT;
 		this.CAffaires = CAffaires;
 		tauxHSup = HSup;
+		coutH = prixH;
+
+		this.paieH = paieH;
+		this.paieP = paieP;
 	}
 	
-	public float getSalaire() {
-		if ((paieH!=null) && (paieP == null))
-			salaire = paieH.CalculSalaireH();
-		else if ((paieH == null) && (paieP != null))
-			salaire = paieP.CalculSalaireP();
+	public String getNom() {
+		return nom;
+	}
+	
+	/**
+	 * Méthode polymorphe d'accès au salaire 
+	 * @return 
+	 */
+	public float SalaireAccesseur() {
+		float salaire = 0;
 		
+		if ((paieH != null) && (paieP == null))		salaire = paieH.getSalaire(nbHTrav, tauxHSup, coutH, CAffaires);	
+		else if ((paieH == null) && (paieP != null))	salaire = paieP.getSalaire(CAffaires);
+
 		return salaire;
 	}
 	

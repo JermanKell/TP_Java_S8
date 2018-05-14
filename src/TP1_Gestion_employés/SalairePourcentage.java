@@ -1,7 +1,10 @@
 package TP1_Gestion_employés;
 
 public interface SalairePourcentage {
-
-	public float CalculSalaireP();
+	/**
+	 * Méthode de calcul du salaire pour les commerciaux et collaborateurs
+	 * @return	Salaire approximatif en euros
+	 */
+	public float getSalaire(float CA);
 
 }
