@@ -5,6 +5,6 @@ public interface SalairePourcentage {
 	 * Méthode de calcul du salaire pour les commerciaux et collaborateurs
 	 * @return	Salaire approximatif en euros
 	 */
-	public float getSalaire(float CA);
+	public double getSalaire(double CA);
 
 }

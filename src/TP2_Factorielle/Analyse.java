@@ -12,6 +12,10 @@ public class Analyse {
 		sc = new Scanner(System.in);
 	}
 	
+	/**
+	 * Méthode qui va se charger de lire le parametre rentré par l'utilisateur
+	 * @throws Exception	Exception levé dans le cas d'une erreur constatée
+	 */
 	public void Recherche() throws Exception{
 		System.out.println("Veuillez rentrer l'entier dont le factorielle doit etre calcule:\n");
 		String str = sc.nextLine();

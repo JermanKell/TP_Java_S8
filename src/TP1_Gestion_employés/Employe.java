@@ -13,22 +13,22 @@ public abstract class Employe {
 	/**
 	 * Nombre d'heures travaillées
 	 */
-	protected float nbHTrav;
+	protected double nbHTrav;
 	
 	/**
 	 * Chiffre d'affaires fait (cadre ou collaborateur)
 	 */
-	protected float CAffaires;
+	protected double CAffaires;
 	
 	/**
 	 * Nombre d'heures supplémentaires faites
 	 */
-	protected float tauxHSup;
+	protected double tauxHSup;
 	
 	/**
 	 * Coût d'une heure de travail
 	 */
-	protected float coutH;
+	protected double coutH;
 	
 	/**
 	 * Constructeur d'objet Employe
@@ -46,6 +46,16 @@ public abstract class Employe {
 		this.paieP = paieP;
 	}
 	
+	public Employe(String nom, String numero, int age,double nbHeuresT, double CAffaires, double HSup, double prixH) {
+		this.nom = nom;
+		numTel = numero;
+		this.age = age;
+		nbHTrav = nbHeuresT;
+		this.CAffaires = CAffaires;
+		tauxHSup = HSup;
+		coutH = prixH;
+	}
+	
 	/**
 	 * Constructeur d'objet Employe 
 	 * @param nom
@@ -57,7 +67,7 @@ public abstract class Employe {
 	 * @param paieH
 	 * @param paieP
 	 */
-	public Employe(String nom, String numero, int age,float nbHeuresT, float CAffaires, float HSup, float prixH, SalaireTauxHeures paieH, SalairePourcentage paieP) {
+	public Employe(String nom, String numero, int age, double nbHeuresT, double CAffaires, double HSup, double prixH, SalaireTauxHeures paieH, SalairePourcentage paieP) {
 		this.nom = nom;
 		numTel = numero;
 		this.age = age;
@@ -78,17 +88,12 @@ public abstract class Employe {
 	 * Méthode polymorphe d'accès au salaire 
 	 * @return 
 	 */
-	public float SalaireAccesseur() {
-		float salaire = 0;
+	public double SalaireAccesseur() {
+		double salaire = 0;
 		
 		if ((paieH != null) && (paieP == null))		salaire = paieH.getSalaire(nbHTrav, tauxHSup, coutH, CAffaires);	
 		else if ((paieH == null) && (paieP != null))	salaire = paieP.getSalaire(CAffaires);
 
 		return salaire;
-	}
-	
-	public String decrisToi() {
-		String chaine = "Je suis " + nom + " et je gagne " + salaire + ".";
-		return chaine;
 	}
 }

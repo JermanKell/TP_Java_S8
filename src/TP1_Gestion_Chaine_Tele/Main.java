@@ -10,9 +10,9 @@ public class Main {
 		Documentaire doc = new DocumentaireAnimalier("La Planète des Singes", 2);
 		Documentaire doc2 = new DocumentaireCulturel("L'ordi", 5, "la technologie");
 		
-		Emission mario = new Jeux("Mario World", 1);
+		Emission mario = new Jeux("Mario World");
 		Films Labyrinthe = new Films("Le Labyrinthe", 2);
-		Emission Arrow = new Series("Arrow", 10);
+		Emission Arrow = new Serie("Arrow");
 		
 		programmation.add(doc);
 		programmation.add(doc2);

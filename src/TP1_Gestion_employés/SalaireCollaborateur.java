@@ -8,10 +8,10 @@ public class SalaireCollaborateur implements SalaireTauxHeures{
 	}
 
 	@Override
-	public float getSalaire(float nbHTrav, float nbHSup, float prixH, float CA) {
-		float sal1 = comm.getSalaire(CA);
-		float prixHSup = (float) (1.5 * prixH);
-		float sal2;
+	public double getSalaire(double nbHTrav, double nbHSup, double prixH, double CA) {
+		double sal1 = comm.getSalaire(CA);
+		double prixHSup = (double) (1.5 * prixH);
+		double sal2;
 		
 		sal2 = (nbHTrav * prixH) + (nbHSup * prixHSup);
 		return sal1 + sal2;

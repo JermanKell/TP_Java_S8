@@ -2,8 +2,8 @@ package TP1_Gestion_Chaine_Tele;
 
 public class Jeux extends Emission implements Divertissement{
 		
-	public Jeux(String nom, int duree) {
-		super(nom, duree);
+	public Jeux(String nom) {
+		super(nom, 2);
 	}
 
 	@Override

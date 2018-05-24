@@ -3,10 +3,10 @@ package TP1_Gestion_Chaine_Tele;
 public class Mangas extends Emission implements Divertissement, Fiction{
 	private int ReaAnnee;
 	private String ReaNom;
-	private boolean Redif;
 	
-	public Mangas(String nom, int duree) {
-		super(nom, duree);
+	public Mangas(String nom) {
+		super(nom, 2);
+		Redif = false;
 	}
 	
 	public Mangas(String nom, int duree, int annee, String nomRea, boolean redif) {

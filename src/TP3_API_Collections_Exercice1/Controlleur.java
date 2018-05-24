@@ -51,9 +51,12 @@ public class Controlleur {
 	}
 	
 	public static void CalculMoyenne(ArrayList<Integer> lNotes, ArrayList<Integer> lCoef) {
+		double moy;
 		if ((lNotes.size() == 0) || (lCoef.size() == 0))	throw new IllegalArgumentException("La taille du tableau est incorrecte");
 		else if (lNotes.size() != lCoef.size())	throw new IndexOutOfBoundsException("Les tailles des tableaux sont différentes");
 		
-		Etudiant.CalculMoyenne(lNotes, lCoef);
+		moy = Etudiant.CalculMoyenne(lNotes, lCoef);
+
+		System.out.println("La moyenne de l'etudiant " + Etudiant.prenom + " " + Etudiant.nom + " est " + moy + "/20");
 	}
 }

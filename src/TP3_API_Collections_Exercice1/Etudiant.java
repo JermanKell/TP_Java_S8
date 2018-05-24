@@ -3,8 +3,8 @@ package TP3_API_Collections_Exercice1;
 import java.util.ArrayList;
 
 public class Etudiant {
-	private static String nom = "Bob";
-	private static String prenom = "Marley";
+	public static String nom = "Bob";
+	public static String prenom = "Marley";
 	
 	public static void AjouterNote(ArrayList<Integer> lNotes, ArrayList<Integer> lCoef, int note, int coef) {
 		lNotes.add(note);
@@ -18,7 +18,7 @@ public class Etudiant {
 		}
 	}
 	
-	public static void CalculMoyenne(ArrayList<Integer> lNotes, ArrayList<Integer> lCoef) {
+	public static double CalculMoyenne(ArrayList<Integer> lNotes, ArrayList<Integer> lCoef) {
 		int nbNotes = lNotes.size(), SCoef = 0;
 		double SNotes = 0;
 		
@@ -28,7 +28,7 @@ public class Etudiant {
 		}
 		SNotes = SNotes / SCoef;
 		
-		System.out.println("La moyenne de l'etudiant " + prenom + " " + nom + " est " + SNotes + "/20");
+		return SNotes;
 	}
 	
 	public static void ChangerNote(ArrayList<Integer> lNotes, int note, int noteChange) {
