@@ -8,6 +8,10 @@ public class Calcul {
 		
 	}
 	
+	/**
+	 * Méthode de calcul du factorielle
+	 * @param val
+	 */
 	public static void calcul(int val) {
 		varFac = val;
 		for (int i = 2; i < val+1; i++) {

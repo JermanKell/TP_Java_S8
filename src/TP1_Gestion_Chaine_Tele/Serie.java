@@ -1,43 +1,21 @@
 package TP1_Gestion_Chaine_Tele;
 
-public class Series extends Emission implements Divertissement, Fiction{	
+public class Serie extends Emission implements Divertissement, Fiction{
 	private int ReaAnnee;
 	private String ReaNom;
-	private boolean Redif;
 	
-	public Series(String nom, int duree) {
-		super(nom, duree);
+	public Serie(String nom) {
+		super(nom, 2);
+		Redif = false;
 	}
 	
-	public Series(String nom, int duree, int annee, String nomRea, boolean redif) {
+	public Serie(String nom, int duree, int annee, String nomRea, boolean redif) {
 		super(nom, duree);
 		ReaAnnee = annee;
 		ReaNom = nomRea;
 		Redif = redif;
 	}
 
-	@Override
-	public String getNom() {
-		return nom;
-	}
-
-	@Override
-	public void setNom(String nom) {
-		this.nom = nom;
-		
-	}
-
-	@Override
-	public void setDuree(int duree) {
-		this.duree = duree;
-		
-	}
-
-	@Override
-	public int getDuree() {
-		return duree;
-	}
-	
 	@Override
 	public int getAnneeRea() {
 		return ReaAnnee;
@@ -62,8 +40,7 @@ public class Series extends Emission implements Divertissement, Fiction{
 
 	@Override
 	public void setRedif(boolean redif) {
-		Redif = redif;
-		
+		Redif = redif;		
 	}
 
 	@Override
@@ -71,4 +48,23 @@ public class Series extends Emission implements Divertissement, Fiction{
 		return Redif;
 	}
 
+	@Override
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	@Override
+	public String getNom() {
+		return nom;
+	}
+
+	@Override
+	public void setDuree(int duree) {
+		this.duree = duree;
+	}
+
+	@Override
+	public int getDuree() {
+		return duree;
+	}
 }

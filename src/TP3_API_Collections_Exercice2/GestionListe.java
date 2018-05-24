@@ -3,16 +3,31 @@ package TP3_API_Collections_Exercice2;
 import java.util.ArrayList;
 
 public class GestionListe {
+	/**
+	 * Créé et renvoie le singleton avec l'element ajouté
+	 * @param element	Element à ajouter au nouveau singleton
+	 * @return		Ensemble à un seul element (singleton)
+	 */
 	public static ArrayList<Integer> creerSingleton(int element) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(element);
 		return list;		
 	}
 	
+	/**
+	 * Ajoute un element à un ensemble selectionné par l'utilisateur 
+	 * 		(autorisation de doublons) => pas de consignes pour le contraire
+	 * @param list		Ensemble où l'element doit etre insere
+	 * @param element	Element à inserer
+	 */
 	public static void AjouterElement(ArrayList<Integer> list, int element) {
 		list.add(element);
 	}
 	
+	/**
+	 * Affiche le contenu d'un ensemble désigné
+	 * @param list		Ensemble désigné
+	 */
 	public static void AfficherContenuEnsemble(ArrayList<Integer> list) {
 		System.out.println("Le(s) valeur(s) contenue(s) dans l'ensemble:");
 		for (int valeur : list) {
@@ -20,6 +35,12 @@ public class GestionListe {
 		}
 	}
 	
+	/**
+	 * Calcule l'ensemble résultant de l'union des deux ensembles selectionnes
+	 * @param ens1		Premier ensemble selectionné
+	 * @param ens2		Seconde ensemble selectionné
+	 * @return			Nouvel ensemble résultant
+	 */
 	public static ArrayList<Integer> CalculUnionEnsembles(ArrayList<Integer> ens1, ArrayList<Integer> ens2) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
@@ -60,7 +81,12 @@ public class GestionListe {
 		return list;
 	}
 		
-	
+	/**
+	 * Calcule l'ensemble résultant de l'intersection des deux ensembles selectionnes
+	 * @param ens1		Premier ensemble selectionné
+	 * @param ens2		Seconde ensemble selectionné
+	 * @return			Nouvel ensemble résultant
+	 */
 	public static ArrayList<Integer> CalculIntersectionEnsembles(ArrayList<Integer> ens1, ArrayList<Integer> ens2) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		int element;
@@ -92,5 +118,25 @@ public class GestionListe {
 		AfficherContenuEnsemble(list);
 		
 		return list;
+	}
+	
+	/**
+	 * Vérifie l'appartenance d'un element à un ensemble désigné
+	 * @param list		Ensemble désigné
+	 * @param element	Element à vérifier
+	 * @return			oui ou non il appartient
+	 */
+	public static boolean AppartenanceElementEnsemble(ArrayList<Integer> list, int element) {
+		if (list.contains(element)) return true;
+		else return false;
+	}
+	
+	/**
+	 * Retourne la taille de l'ensemble désigné
+	 * @param list		Ensemble désigné
+	 * @return			Taille entière de l'ensemble désigné
+	 */
+	public static int ComptageElementsEnsemble(ArrayList<Integer> list) {
+		return list.size();
 	}
 }
