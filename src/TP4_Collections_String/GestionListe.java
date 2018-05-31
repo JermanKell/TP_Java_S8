@@ -67,8 +67,8 @@ public class GestionListe {
 		if (tabElements.length != tabPos.length) System.out.println("Les tailles des deux tableaux sont différentes");
 		else {
 			for (i = 0; i < tabPos.length; i++) {
-				if ((tabPos[i] > 0) && (tabPos[i] < liste.size())){
-					liste.add(tabPos[i]-1, tabElements[i]);
+				if ((tabPos[i] > 0) && (tabPos[i] <= liste.size())){
+					liste.add(tabPos[i], tabElements[i]);
 					System.out.println("L'element " + tabElements[i] + " a bien ete ajoute a la position " + tabPos[i]);
 				}
 				else System.out.println("L'element " + tabElements[i] + " a bien ete ajoute a la position " + tabPos[i] 

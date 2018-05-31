@@ -21,53 +21,150 @@ public class Main {
 			int choix = sc.nextInt();
 			
 			switch(choix) {
-				case 0: ctrl.CreerListe();
+				case 0: try {
+					ctr1.
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
+					ctrl.CreerListe();
 					break;
-				case 1:
+				case 1: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 2: 
+				case 2: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 3:
+				case 3: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 4: 
+				case 4: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 5:
+				case 5: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 6: 
+				case 6: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 7:
+				case 7: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 8: 
+				case 8: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 9:
+				case 9: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 10: 
+				case 10: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 11:
+				case 11:try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 12: 
+				case 12: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 13:
+				case 13: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 14: 
+				case 14: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 15:
+				case 15: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 16: 
+				case 16:  try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 17:
+				case 17: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 18: 
+				case 18:  try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 19:
+				case 19: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 20: 
+				case 20: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 21:
+				case 21: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 22: 
+				case 22:  try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
-				case 23:
+				case 23: try {
+					
+				} catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 					break;
 			}
 		}
