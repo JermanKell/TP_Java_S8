@@ -22,146 +22,147 @@ public class Main {
 			
 			switch(choix) {
 				case 0: try {
-					ctr1.
+					ctrl.CreerListe();
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					ctrl.CreerListe();
 					break;
 				case 1: try {
-					
+					ctrl.AjouterSimpleElement(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 2: try {
-					
+					ctrl.AfficherListe(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 3: try {
-					
+					ctrl.AfficherListeFromPos(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 4: try {
-					
+					ctrl.AfficherListeInverse(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 5: try {
-					
+					ctrl.AjouterElementFromPos(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 6: try {
-					
+					ctrl.AjouterElementsDebFin(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 7: try {
-					
+					ctrl.AjouterElementFromPos(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 8: try {
-					
+					ctrl.AfficherListePos(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 9: try {
-					
+					ctrl.AjouterElements(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 10: try {
-					
+					ctrl.TrouverElement(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 11:try {
-					
+					ctrl.SupprimerElement(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 12: try {
-					
+					ctrl.SupprimerElementFromPos(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 13: try {
-					
+					ctrl.PermuterElements(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 14: try {
-					
+					ctrl.MelangerListe(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 15: try {
-					
+					ctrl.DupliquerListe(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 16:  try {
-					
+					ctrl.SupprimerElement(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 17: try {
-					
+					ctrl.RecupererPremierElement(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 18:  try {
-					
+					ctrl.RecupererDernierElement(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 19: try {
-					
+					ctrl.RemplacerElement(sc);					
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 20: try {
-					
+					ctrl.ConvertirListe(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 21: try {
-					
+					ctrl.ListeVide(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 22:  try {
-					
+					ctrl.ComparerListes(sc);
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}
 					break;
 				case 23: try {
-					
+					System.out.println("Arrêt de l'application ...");
+					flag = false;
 				} catch(Exception e) {
 					System.out.println(e.getMessage());
 				}

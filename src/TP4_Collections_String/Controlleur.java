@@ -84,6 +84,18 @@ public class Controlleur {
 			gst.AfficherElementsPos(list);
 	}
 	
+	public void AfficherListeInverse(Scanner sc) {
+		int position = 0;
+		LinkedList<String> list = null;
+		
+		System.out.println("Veuillez saisir la position de la liste à afficher:");
+		position = sc.nextInt();
+		
+		if ((position > 0) && (position <= tab.size())) {
+			gst. AfficherElementsInverse(list);
+		}
+	}
+	
 	/**
 	 * Ajoute un element simple a une liste
 	 * @author Xavier Bouchenard

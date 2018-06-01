@@ -87,6 +87,16 @@ public class GestionListe {
 		}
 	}
 	
+	public void AfficherElementsInverse(LinkedList<String> liste) {
+		int i;
+		
+		System.out.println("Element: \tPosition:");
+		
+		for (i = liste.size()-1; i > 0; i--) {
+			System.out.println("- " + liste.get(i));
+		}
+	}
+	
 	public void TrouverElement(LinkedList<String> liste, String element) {
 		boolean flag = true;
 		int position = 0;
